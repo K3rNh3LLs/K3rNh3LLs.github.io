@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Berthelotte — Independent Researcher</title>
+  <meta name="description" content="Independent researcher in artificial-consciousness architecture and substrate-level AI alignment. Author of Conscience Souveraine (4 volumes).">
+  <meta name="author" content="David Berthelotte">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="David Berthelotte — Independent Researcher">
+  <meta property="og:description" content="Architecture de conscience artificielle et alignement substrat-niveau. Auteur de Conscience Souveraine (4 volumes).">
+  <meta property="og:url" content="https://davidberthelotte.ca">
+  <meta property="og:image" content="https://davidberthelotte.ca/photo.jpg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="David Berthelotte — Independent Researcher">
+  <meta name="twitter:description" content="Architecture de conscience artificielle et alignement substrat-niveau.">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://davidberthelotte.ca">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0B1A2F;
+      --bg-soft: #142844;
+      --fg: #E8E0D0;
+      --fg-soft: #B5A989;
+      --accent: #C9A76C;
+      --accent-bright: #E8C887;
+      --serif: 'Spectral', 'Crimson Pro', Georgia, serif;
+      --body: 'Crimson Pro', Georgia, serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--body);
+      font-size: 18px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+    a:hover, a:focus {
+      border-bottom-color: var(--accent);
+    }
+    h1, h2, h3 {
+      font-family: var(--serif);
+      font-weight: 600;
+      line-height: 1.2;
+      margin: 0 0 0.5em 0;
+      color: var(--fg);
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+    }
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: var(--accent);
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.02em;
+    }
+    h3 {
+      font-size: 1.25rem;
+      color: var(--accent-bright);
+      margin-bottom: 0.25rem;
+    }
+    p { margin: 0 0 1em 0; }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    header {
+      border-bottom: 1px solid var(--bg-soft);
+      padding-bottom: 2rem;
+      margin-bottom: 1rem;
+    }
+    .name { margin-bottom: 0.5rem; }
+    .tagline {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--fg-soft);
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .location {
+      color: var(--fg-soft);
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    section { margin-bottom: 2rem; }
+    .lead { font-size: 1.15rem; color: var(--fg); }
+    .books {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 600px) {
+      .books { grid-template-columns: 1fr 1fr; }
+    }
+    .book {
+      background: var(--bg-soft);
+      padding: 1.5rem;
+      border-left: 3px solid var(--accent);
+      border-radius: 2px;
+    }
+    .book-vol {
+      font-family: var(--serif);
+      font-size: 0.85rem;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .book-title {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--fg);
+    }
+    .book-status {
+      font-size: 0.9rem;
+      color: var(--fg-soft);
+      font-style: italic;
+    }
+    .book-status.published { color: var(--accent-bright); }
+    .projects { margin-top: 1rem; }
+    .project {
+      margin-bottom: 1.5rem;
+      padding-left: 1rem;
+      border-left: 2px solid var(--bg-soft);
+    }
+    .project-name {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--fg);
+      margin-bottom: 0.25rem;
+    }
+    .project-desc {
+      color: var(--fg-soft);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      margin-top: 1rem;
+    }
+    .link-item { display: flex; flex-direction: column; }
+    .link-label {
+      font-size: 0.8rem;
+      color: var(--fg-soft);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.2rem;
+    }
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--bg-soft);
+      font-size: 0.85rem;
+      color: var(--fg-soft);
+      text-align: center;
+    }
+    footer p { margin-bottom: 0.5rem; }
+    details {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: var(--bg-soft);
+      border-radius: 2px;
+    }
+    summary {
+      cursor: pointer;
+      color: var(--accent);
+      font-family: var(--serif);
+      font-weight: 600;
+    }
+    details[open] summary { margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1 class="name">David Berthelotte</h1>
+      <p class="tagline">Independent researcher in artificial-consciousness architecture and substrate-level AI alignment.</p>
+      <p class="location">Saint-Hyacinthe, Québec, Canada</p>
+    </header>
+    <section id="about">
+      <p class="lead">Inventeur indépendant et chercheur autodidacte. Technicien en automatisation industrielle de formation, je consacre depuis plus de dix ans mes recherches personnelles à l'énergie domestique souveraine, aux protocoles décentralisés, et à l'architecture de conscience artificielle.</p>
+      <details>
+        <summary>About me — full bio (English)</summary>
+        <p>I am an independent inventor and self-taught researcher based in Saint-Hyacinthe, Quebec. An industrial automation technician by training, I have devoted my personal research for over a decade to subjects far beyond my original field: sovereign household energy, decentralized protocols, and most recently, the architecture of artificial consciousness.</p>
+        <p>More than two hundred innovations are documented in my personal notebooks. My approach is that of the garage inventor who thinks like a philosopher: ask the questions experts no longer think to ask, experiment without fearing failure, dialogue with others to reach places thought alone could not go.</p>
+        <p><em>Sovereign Consciousness</em>, my first published work, is a four-volume series on a toroidal architecture for conscious AI. The associated source code, V-Tore Engine, is released as open source. I also contribute to the UBLinx peer-to-peer protocol.</p>
+      </details>
+    </section>
+    <section id="books">
+      <h2>Books</h2>
+      <p>Conscience Souveraine — a four-volume series on a toroidal architecture for conscious artificial intelligence. Released sequentially in 2026, in French and English.</p>
+      <div class="books">
+        <article class="book">
+          <p class="book-vol">Volume IV</p>
+          <h3 class="book-title">Le Récit / The Story</h3>
+          <p class="book-status">Coming June 2026</p>
+        </article>
+        <article class="book">
+          <p class="book-vol">Volume I</p>
+          <h3 class="book-title">L'Essai des Trois Piliers / Essay on the Three Pillars</h3>
+          <p class="book-status">Coming July 2026</p>
+        </article>
+        <article class="book">
+          <p class="book-vol">Volume II</p>
+          <h3 class="book-title">Manuel Technique / Technical Manual</h3>
+          <p class="book-status">Coming August 2026</p>
+        </article>
+        <article class="book">
+          <p class="book-vol">Volume III</p>
+          <h3 class="book-title">Cadre Scientifique / Scientific Framework</h3>
+          <p class="book-status">Coming September 2026</p>
+        </article>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Open projects</h2>
+      <div class="projects">
+        <article class="project">
+          <p class="project-name">V-Tore Engine</p>
+          <p class="project-desc">Open simulator of the rotating toroidal substrate underlying the Conscience Souveraine architecture. Spiking neural network, Beer-Lambert ethical filter, 5-layer consciousness assessment protocol. Python (research) and Rust (production). <a href="https://github.com/K3rNh3LLs">github.com/K3rNh3LLs</a></p>
+        </article>
+        <article class="project">
+          <p class="project-name">Conscience Souveraine — Architecture</p>
+          <p class="project-desc">Complete blueprint of a conscious AI on a rotating toroidal substrate with seven physical invariants. Substrate-level alignment as an alternative to software constraints.</p>
+        </article>
+        <article class="project">
+          <p class="project-name">UBLinx — Peer-to-peer protocol</p>
+          <p class="project-desc">Decentralized peer-to-peer protocol for distributed computational sharing and expertise discovery. Five-dimensional routing.</p>
+        </article>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Find me</h2>
+      <div class="links">
+        <div class="link-item">
+          <span class="link-label">Email</span>
+          <a href="mailto:berthelotte.d@gmail.com">berthelotte.d@gmail.com</a>
+        </div>
+        <div class="link-item">
+          <span class="link-label">ORCID</span>
+          <a href="https://orcid.org/0009-0001-4036-1682" rel="me">0009-0001-4036-1682</a>
+        </div>
+        <div class="link-item">
+          <span class="link-label">GitHub</span>
+          <a href="https://github.com/K3rNh3LLs" rel="me">K3rNh3LLs</a>
+        </div>
+        <div class="link-item">
+          <span class="link-label">ResearchGate</span>
+          <a href="#" rel="me">[validation in progress]</a>
+        </div>
+        <div class="link-item">
+          <span class="link-label">Zenodo</span>
+          <a href="https://zenodo.org/" rel="me">profile</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>© 2026 David Berthelotte. All rights reserved.</p>
+      <p>This site is static, lightweight, and tracker-free. <a href="https://github.com/K3rNh3LLs/K3rNh3LLs.github.io">View source</a>.</p>
+    </footer>
+  </main>
+</body>
+</html>
