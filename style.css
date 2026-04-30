@@ -1,0 +1,102 @@
+:root {
+  --bg: #0B1A2F;
+  --bg-soft: #142844;
+  --fg: #E8E0D0;
+  --fg-soft: #B5A989;
+  --accent: #C9A76C;
+  --accent-bright: #E8C887;
+  --serif: 'Spectral', 'Crimson Pro', Georgia, serif;
+  --body: 'Crimson Pro', Georgia, serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--body);
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s ease; }
+a:hover, a:focus { border-bottom-color: var(--accent); }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; margin: 0 0 0.5em 0; color: var(--fg); }
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); color: var(--accent); margin-top: 3rem; margin-bottom: 1rem; letter-spacing: 0.02em; }
+h3 { font-size: 1.25rem; color: var(--accent-bright); margin-bottom: 0.25rem; }
+p { margin: 0 0 1em 0; }
+.container { max-width: 720px; margin: 0 auto; padding: 4rem 1.5rem; }
+header { border-bottom: 1px solid var(--bg-soft); padding-bottom: 2rem; margin-bottom: 1rem; }
+.header-inner { display: flex; align-items: center; gap: 2rem; }
+.photo { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; object-position: center top; border: 3px solid var(--accent); flex-shrink: 0; }
+.header-text { flex: 1; }
+.name { margin-bottom: 0.5rem; }
+.tagline { font-family: var(--serif); font-style: italic; color: var(--fg-soft); font-size: 1.1rem; margin-bottom: 1.5rem; }
+.location { color: var(--fg-soft); font-size: 0.95rem; letter-spacing: 0.05em; text-transform: uppercase; }
+@media (max-width: 520px) { .header-inner { flex-direction: column; align-items: center; text-align: center; } .photo { width: 90px; height: 90px; } }
+section { margin-top: 2rem; }
+
+/* Language switcher */
+.lang-switcher { display: flex; gap: 0.5rem; margin-top: 1rem; }
+.lang-btn {
+  font-family: var(--serif); font-size: 0.85rem; font-weight: 600;
+  background: transparent; color: var(--fg-soft); border: 1px solid var(--bg-soft);
+  padding: 0.3em 0.7em; border-radius: 3px; cursor: pointer; transition: all 0.2s ease;
+}
+.lang-btn:hover { color: var(--accent); border-color: var(--accent); }
+.lang-btn.active { color: var(--accent); border-color: var(--accent); border-bottom: 2px solid var(--accent); }
+
+/* Books grid */
+.books { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+.book { background: var(--bg-soft); border-radius: 4px; padding: 1.25rem 1.5rem; border-left: 3px solid var(--accent); transition: transform 0.2s ease; }
+.book:hover { transform: translateY(-4px); }
+.book-cover { width: 100%; aspect-ratio: 2/3; object-fit: cover; border-radius: 2px; margin-bottom: 1rem; display: block; }
+.book-vol { font-size: 0.8rem; color: var(--fg-soft); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.25rem; }
+.book-title { margin-bottom: 0.5rem; }
+.book-status { font-size: 0.85rem; color: var(--fg-soft); font-style: italic; margin-bottom: 0.75rem; }
+.book-isbn { font-size: 0.8rem; color: var(--fg-soft); margin-bottom: 0.25rem; font-family: monospace; }
+.book-isbn strong { color: var(--fg); font-family: var(--serif); }
+.book-price { font-size: 0.9rem; color: var(--accent); font-weight: 600; margin-bottom: 0.75rem; }
+.book-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+.btn { display: inline-flex; align-items: center; gap: 0.35rem; font-family: var(--serif); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; padding: 0.4em 0.9em; border-radius: 3px; border: none; cursor: pointer; text-decoration: none; transition: opacity 0.2s ease, background 0.2s ease; }
+.btn:hover { opacity: 0.85; border-bottom: none; }
+.btn-epub { background: var(--accent); color: var(--bg); }
+.btn-print { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+.btn-print:hover { background: var(--accent); color: var(--bg); }
+.btn-disabled { opacity: 0.45; cursor: not-allowed; pointer-events: none; }
+
+/* Projects */
+.projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+.project { background: var(--bg-soft); border-radius: 4px; padding: 1.25rem 1.5rem; }
+.project-name { font-family: var(--serif); font-weight: 600; color: var(--accent-bright); margin-bottom: 0.25rem; }
+.project-desc { font-size: 0.95rem; color: var(--fg-soft); margin: 0; }
+
+/* Links */
+.links { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.link-item { display: flex; flex-direction: column; }
+.link-label { font-size: 0.8rem; color: var(--fg-soft); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.2rem; }
+
+/* Footer */
+footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--bg-soft); font-size: 0.85rem; color: var(--fg-soft); text-align: center; }
+footer p { margin-bottom: 0.5rem; }
+
+/* Details / Summary */
+details { margin-top: 1rem; padding: 1rem; background: var(--bg-soft); border-radius: 2px; }
+summary { cursor: pointer; color: var(--accent); font-family: var(--serif); font-weight: 600; }
+details[open] summary { margin-bottom: 1rem; }
+
+/* Order box */
+.order-box { background: var(--bg-soft); border: 1px solid var(--accent); border-radius: 4px; padding: 1.5rem 2rem; margin-top: 1.5rem; text-align: center; }
+.order-box p { color: var(--fg-soft); font-size: 0.95rem; margin-bottom: 1.25rem; }
+.order-box .btn { font-size: 1rem; padding: 0.55em 1.5em; }
+
+/* Lead paragraph */
+.lead { font-size: 1.1rem; color: var(--fg-soft); line-height: 1.7; }
+
+/* Pre-order banner */
+.preorder-note {
+  background: var(--bg-soft); border-left: 3px solid var(--accent);
+  padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.9rem; color: var(--fg-soft);
+}
