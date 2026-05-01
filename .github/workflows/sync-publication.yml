@@ -1,0 +1,51 @@
+name: Sync from Publication Pipeline
+
+on:
+  schedule:
+    # Tous les jours à 6h du matin
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout website repo
+        uses: actions/checkout@v4
+        with:
+          path: website
+
+      - name: Checkout publication repo
+        uses: actions/checkout@v4
+        with:
+          repository: K3rNh3LLs/conscience-souveraine
+          path: publication
+          token: ${{ secrets.PAT_PUBLICATION_REPO }}
+
+      - name: Sync covers
+        run: |
+          echo "[SYNC] Copie des couvertures..."
+          mkdir -p website/covers
+          for i in 1 2 3 4; do
+            src="publication/assets/cover/vol.${i} cover.jpg"
+            dst="website/covers/vol${i}.jpg"
+            if [ -f "$src" ]; then
+              cp "$src" "$dst"
+              echo "[SYNC]   ✓ vol${i}.jpg copié"
+            else
+              echo "[SYNC]   ✗ vol${i}.jpg introuvable"
+            fi
+          done
+
+      - name: Commit and push
+        working-directory: website
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || (
+            git commit -m "Auto-sync: mise à jour des couvertures depuis conscience_souveraine
+
+Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+            git push
+          )
