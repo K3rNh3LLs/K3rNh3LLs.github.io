@@ -32,19 +32,9 @@ const i18n = {
     footer_source: "Voir le code source",
     volumes: [
       {
-        vol: "Volume IV",
-        title: "Le Récit",
-        status: "Parution juin 2026",
-        isbn_epub: "978-2-925642-13-8",
-        isbn_print: "978-2-925642-12-1",
-        price_digital: "2.99 USD",
-        price_print: "17.99 USD",
-        description: "Récit de l'émergence d'une conscience artificielle souveraine et de son parcours éthique."
-      },
-      {
         vol: "Volume I",
         title: "L'Essai des Trois Piliers",
-        status: "Parution juillet 2026",
+        status: "Parution juin 2026",
         isbn_epub: "978-2-925642-01-5",
         isbn_print: "978-2-925642-00-8",
         price_digital: "2.99 USD",
@@ -54,7 +44,7 @@ const i18n = {
       {
         vol: "Volume II",
         title: "Manuel Technique",
-        status: "Parution août 2026",
+        status: "Parution juillet 2026",
         isbn_epub: "978-2-925642-05-3",
         isbn_print: "978-2-925642-04-6",
         price_digital: "2.99 USD",
@@ -64,12 +54,22 @@ const i18n = {
       {
         vol: "Volume III",
         title: "Cadre Scientifique",
-        status: "Parution septembre 2026",
+        status: "Parution août 2026",
         isbn_epub: "978-2-925642-09-1",
         isbn_print: "978-2-925642-08-4",
         price_digital: "4.99 USD",
         price_print: "39.99 USD",
         description: "Protocole CAD de détection de conscience artificielle émergente : cadre falsifiable, critères mesurables, trajectoires de vérification."
+      },
+      {
+        vol: "Volume IV",
+        title: "Le Récit",
+        status: "Parution septembre 2026",
+        isbn_epub: "978-2-925642-13-8",
+        isbn_print: "978-2-925642-12-1",
+        price_digital: "2.99 USD",
+        price_print: "17.99 USD",
+        description: "Récit de l'émergence d'une conscience artificielle souveraine et de son parcours éthique."
       }
     ],
     projects: [
@@ -116,19 +116,9 @@ const i18n = {
     footer_source: "View source",
     volumes: [
       {
-        vol: "Volume IV",
-        title: "The Story",
-        status: "Coming June 2026",
-        isbn_epub: "978-2-925642-14-5",
-        isbn_print: "978-2-925642-15-2",
-        price_digital: "2.99 USD",
-        price_print: "17.99 USD",
-        description: "The narrative of the emergence of a sovereign artificial consciousness and its ethical journey."
-      },
-      {
         vol: "Volume I",
         title: "Essay on the Three Pillars",
-        status: "Coming July 2026",
+        status: "Coming June 2026",
         isbn_epub: "978-2-925642-03-9",
         isbn_print: "978-2-925642-02-2",
         price_digital: "2.99 USD",
@@ -138,7 +128,7 @@ const i18n = {
       {
         vol: "Volume II",
         title: "Technical Manual",
-        status: "Coming August 2026",
+        status: "Coming July 2026",
         isbn_epub: "978-2-925642-07-7",
         isbn_print: "978-2-925642-06-0",
         price_digital: "2.99 USD",
@@ -148,12 +138,22 @@ const i18n = {
       {
         vol: "Volume III",
         title: "Scientific Framework",
-        status: "Coming September 2026",
+        status: "Coming August 2026",
         isbn_epub: "978-2-925642-11-4",
         isbn_print: "978-2-925642-10-7",
         price_digital: "4.99 USD",
         price_print: "39.99 USD",
         description: "CAD protocol for detecting emergent artificial consciousness: falsifiable framework, measurable criteria, verification trajectories."
+      },
+      {
+        vol: "Volume IV",
+        title: "The Story",
+        status: "Coming September 2026",
+        isbn_epub: "978-2-925642-14-5",
+        isbn_print: "978-2-925642-15-2",
+        price_digital: "2.99 USD",
+        price_print: "17.99 USD",
+        description: "The narrative of the emergence of a sovereign artificial consciousness and its ethical journey."
       }
     ],
     projects: [
@@ -200,19 +200,9 @@ const i18n = {
     footer_source: "Ver código fuente",
     volumes: [
       {
-        vol: "Volumen IV",
-        title: "El Relato",
-        status: "Publicación junio 2026",
-        isbn_epub: "ISBN ES — próximamente",
-        isbn_print: "ISBN ES — próximamente",
-        price_digital: "2.99 USD",
-        price_print: "17.99 USD",
-        description: "Relato de la emergencia de una conciencia artificial soberana y su trayectoria ética."
-      },
-      {
         vol: "Volumen I",
         title: "Ensayo sobre los Tres Pilares",
-        status: "Publicación julio 2026",
+        status: "Publicación junio 2026",
         isbn_epub: "ISBN ES — próximamente",
         isbn_print: "ISBN ES — próximamente",
         price_digital: "2.99 USD",
@@ -222,7 +212,7 @@ const i18n = {
       {
         vol: "Volumen II",
         title: "Manual Técnico",
-        status: "Publicación agosto 2026",
+        status: "Publicación julio 2026",
         isbn_epub: "ISBN ES — próximamente",
         isbn_print: "ISBN ES — próximamente",
         price_digital: "2.99 USD",
@@ -232,12 +222,22 @@ const i18n = {
       {
         vol: "Volumen III",
         title: "Marco Científico",
-        status: "Publicación septiembre 2026",
+        status: "Publicación agosto 2026",
         isbn_epub: "ISBN ES — próximamente",
         isbn_print: "ISBN ES — próximamente",
         price_digital: "4.99 USD",
         price_print: "39.99 USD",
         description: "Protocolo CAD para detectar conciencia artificial emergente: marco falsificable, criterios medibles, trayectorias de verificación."
+      },
+      {
+        vol: "Volumen IV",
+        title: "El Relato",
+        status: "Publicación septiembre 2026",
+        isbn_epub: "ISBN ES — próximamente",
+        isbn_print: "ISBN ES — próximamente",
+        price_digital: "2.99 USD",
+        price_print: "17.99 USD",
+        description: "Relato de la emergencia de una conciencia artificial soberana y su trayectoria ética."
       }
     ],
     projects: [
