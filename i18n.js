@@ -1,8 +1,8 @@
 const i18n = {
   fr: {
     title: "David Berthelotte — Chercheur indépendant",
-    meta_description: "Chercheur indépendant en architecture de conscience artificielle et alignement substrat-niveau. Auteur de Conscience Souveraine (4 volumes).",
-    tagline: "Chercheur indépendant en architecture de conscience artificielle et alignement substrat-niveau.",
+    meta_description: "Chercheur indépendant en architecture de conscience artificielle et alignement par contrainte géométrique. Auteur de Conscience Souveraine (4 volumes).",
+    tagline: "Chercheur indépendant en architecture de conscience artificielle et alignement par contrainte géométrique.",
     location: "Saint-Hyacinthe, Québec, Canada",
     about_title: "À propos",
     about_lead: "Inventeur indépendant et chercheur autodidacte. Technicien en automatisation industrielle de formation, je consacre depuis plus de dix ans mes recherches personnelles à l'énergie domestique souveraine, aux protocoles décentralisés, et à l'architecture de conscience artificielle.",
@@ -85,8 +85,8 @@ const i18n = {
   },
   en: {
     title: "David Berthelotte — Independent Researcher",
-    meta_description: "Independent researcher in artificial-consciousness architecture and substrate-level AI alignment. Author of Sovereign Consciousness (4 volumes).",
-    tagline: "Independent researcher in artificial-consciousness architecture and substrate-level AI alignment.",
+    meta_description: "Independent researcher in artificial-consciousness architecture and geometric constraint AI alignment. Author of Sovereign Consciousness (4 volumes).",
+    tagline: "Independent researcher in artificial-consciousness architecture and geometric constraint AI alignment.",
     location: "Saint-Hyacinthe, Quebec, Canada",
     about_title: "About",
     about_lead: "Independent inventor and self-taught researcher. An industrial automation technician by training, I have devoted my personal research for over a decade to sovereign household energy, decentralized protocols, and artificial consciousness architecture.",
