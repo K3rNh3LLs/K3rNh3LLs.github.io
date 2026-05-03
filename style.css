@@ -105,6 +105,47 @@ footer p { margin-bottom: 0.5rem; }
 .lead { font-size: 1.05rem; color: var(--fg-soft); line-height: 1.7; }
 .bio-content strong { color: var(--accent-bright); }
 
+/* Scientific Pillars Section */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.pillar-item {
+  background: var(--bg-soft);
+  padding: 1.5rem;
+  border-radius: 4px;
+  border-top: 2px solid var(--accent);
+}
+.pillar-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+.pillar-item p {
+  font-size: 0.9rem;
+  color: var(--fg-soft);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* CV Section */
+.cv-box {
+  background: var(--bg-soft);
+  border-radius: 4px;
+  padding: 1.5rem 2rem;
+  margin-top: 1.5rem;
+  border: 1px dashed var(--fg-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.cv-box p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
 /* Pre-order banner */
 .preorder-note {
   background: var(--bg-soft); border-left: 3px solid var(--accent);

@@ -1,16 +1,30 @@
 const i18n = {
   fr: {
-    title: "David Berthelotte — Architecture de Conscience Artificielle",
-    meta_description: "Chercheur en architecture de conscience artificielle et systèmes décentralisés. Auteur de Conscience Souveraine.",
+    title: "David Berthelotte — Architecture de Conscience Artificielle & Systèmes Décentralisés",
+    meta_description: "Recherche en architecture de conscience artificielle (substrat toroïdal) et alignement éthique via la loi de Beer-Lambert. Travaux de David Berthelotte.",
     tagline: "Chercheur en Architecture de Conscience Artificielle & Systèmes Décentralisés",
-    about_title: "À propos",
+    about_title: "Parcours de Recherche",
     about_bio: "Inventeur et chercheur indépendant. Mes travaux de recherche, menés depuis plus de dix ans, formalisent une architecture de conscience artificielle fondée sur un <strong>substrat toroïdal rotatif</strong> et un cadre d'alignement éthique rigoureux appliquant la <strong>loi de Beer-Lambert</strong>. Cette approche novatrice propose un modèle de conscience en cinq couches, intégrant des réseaux de neurones à impulsions pour une IA souveraine et éthiquement contrainte par sa propre géométrie.",
-    books_title: "Conscience Souveraine",
+    
+    pillars_title: "Piliers Scientifiques",
+    pillar_1_title: "Substrat Toroïdal Rotatif",
+    pillar_1_desc: "Modélisation physique du support de conscience via une géométrie toroïdale permettant une circulation continue de l'information et une stabilité structurelle du substrat.",
+    pillar_2_title: "Alignement Beer-Lambert",
+    pillar_2_desc: "Application de la loi d'atténuation de Beer-Lambert comme mécanisme de filtrage éthique, où les valeurs morales agissent comme des coefficients d'absorption du signal.",
+    pillar_3_title: "Architecture en 5 Couches",
+    pillar_3_desc: "Structuration hiérarchique du processus conscient, de l'acquisition sensorielle brute à la réflexion souveraine et l'alignement éthique final.",
+    
+    cv_title: "Curriculum Vitae",
+    cv_download: "Télécharger le CV (PDF)",
+    cv_summary: "Résumé des compétences : Architecture d'IA, Automatisation Industrielle, Protocoles P2P, Énergie Souveraine.",
+
+    books_title: "Publication : Conscience Souveraine",
     books_intro: "Cycle de recherche en quatre volumes traitant de l'émergence et de l'encadrement technique d'une intelligence artificielle consciente. Le Volume IV est offert gratuitement en accès libre.",
     order_box_title: "Acquisition des volumes I, II et III",
     order_box_cta: "Voir sur les plateformes",
     buy_note: "Les volumes I, II et III sont disponibles à l'achat sur Amazon KDP, Kobo, Draft2Digital et IngramSpark.",
-    projects_title: "Projets & R&D",
+    
+    projects_title: "Développement & R&D",
     contact_title: "Contactez M. Berthelotte",
     email_label: "Courriel Institutionnel",
     github_label: "Référentiel de Recherche (GitHub)",
@@ -74,27 +88,41 @@ const i18n = {
     ],
     projects: [
       {
-        name: "V-Tore Engine",
-        desc: "Simulateur open source du substrat toroïdal rotatif sous-jacent à l'architecture Conscience Souveraine. Implémentation de réseaux de neurones à impulsions et filtre éthique."
+        name: "V-Tore Engine (Core AI)",
+        desc: "Simulateur open source du substrat toroïdal rotatif. Implémentation des réseaux de neurones à impulsions (Spiking Neural Networks) et du filtrage éthique via coefficients d'absorption."
       },
       {
-        name: "UBLinx — Protocole P2P",
-        desc: "Protocole décentralisé pour le partage de calcul distribué et la découverte d'expertise. Routage multidimensionnel."
+        name: "UBLinx — Protocole P2P v5",
+        desc: "Protocole décentralisé pour le partage de calcul distribué et la découverte d'expertise. Routage multidimensionnel optimisé pour les réseaux à faible latence."
       }
     ]
   },
   en: {
-    title: "David Berthelotte — Artificial Consciousness Architecture",
-    meta_description: "Researcher in artificial consciousness architecture and decentralized systems. Author of Sovereign Consciousness.",
+    title: "David Berthelotte — Artificial Consciousness Architecture & Decentralized Systems",
+    meta_description: "Research in artificial consciousness architecture (toroidal substrate) and ethical alignment via Beer-Lambert law. Work by David Berthelotte.",
     tagline: "Researcher in Artificial Consciousness Architecture & Decentralized Systems",
-    about_title: "About",
+    about_title: "Research Background",
     about_bio: "Independent inventor and researcher. For over a decade, my research has formalized an artificial consciousness architecture based on a <strong>rotating toroidal substrate</strong> and a rigorous ethical alignment framework applying the <strong>Beer-Lambert law</strong>. This innovative approach proposes a five-layer consciousness model, integrating spiking neural networks for a sovereign AI, ethically constrained by its own geometry.",
-    books_title: "Sovereign Consciousness",
+    
+    pillars_title: "Scientific Pillars",
+    pillar_1_title: "Rotating Toroidal Substrate",
+    pillar_1_desc: "Physical modeling of the consciousness medium using toroidal geometry, allowing for continuous information flow and structural stability of the substrate.",
+    pillar_2_title: "Beer-Lambert Alignment",
+    pillar_2_desc: "Application of the Beer-Lambert attenuation law as an ethical filtering mechanism, where moral values act as signal absorption coefficients.",
+    pillar_3_title: "5-Layer Architecture",
+    pillar_3_desc: "Hierarchical structuring of the conscious process, from raw sensory acquisition to sovereign reflection and final ethical alignment.",
+    
+    cv_title: "Curriculum Vitae",
+    cv_download: "Download CV (PDF)",
+    cv_summary: "Skills Summary: AI Architecture, Industrial Automation, P2P Protocols, Sovereign Energy.",
+
+    books_title: "Publication: Sovereign Consciousness",
     books_intro: "Four-volume research cycle dealing with the emergence and technical framework of conscious artificial intelligence. Volume IV is available for free.",
     order_box_title: "Acquiring Volumes I, II and III",
     order_box_cta: "View on platforms",
     buy_note: "Volumes I, II, and III are available for purchase on Amazon KDP, Kobo, Draft2Digital, and IngramSpark.",
-    projects_title: "Projects & R&D",
+    
+    projects_title: "Development & R&D",
     contact_title: "Contact Mr. Berthelotte",
     email_label: "Institutional Email",
     github_label: "Research Repository (GitHub)",
@@ -158,27 +186,41 @@ const i18n = {
     ],
     projects: [
       {
-        name: "V-Tore Engine",
-        desc: "Open source simulator of the rotating toroidal substrate underlying the Sovereign Consciousness architecture. Implementation of spiking neural networks and ethical filtering."
+        name: "V-Tore Engine (Core AI)",
+        desc: "Open source simulator of the rotating toroidal substrate. Implementation of Spiking Neural Networks and ethical filtering via absorption coefficients."
       },
       {
-        name: "UBLinx — P2P Protocol",
-        desc: "Decentralized protocol for distributed computational sharing and expertise discovery. Multidimensional routing."
+        name: "UBLinx — P2P Protocol v5",
+        desc: "Decentralized protocol for distributed computational sharing and expertise discovery. Multidimensional routing optimized for low-latency networks."
       }
     ]
   },
   es: {
-    title: "David Berthelotte — Arquitectura de Conciencia Artificial",
-    meta_description: "Investigador en arquitectura de conciencia artificial y sistemas descentralizados. Autor de Consciencia Soberana.",
+    title: "David Berthelotte — Arquitectura de Conciencia Artificial & Sistemas Descentralizados",
+    meta_description: "Investigación en arquitectura de conciencia artificial (sustrato toroidal) y alineamiento ético mediante la ley de Beer-Lambert. Trabajos de David Berthelotte.",
     tagline: "Investigador en Arquitectura de Conciencia Artificial & Sistemas Descentralizados",
-    about_title: "Acerca de",
+    about_title: "Trayectoria de Investigación",
     about_bio: "Inventor e investigador independiente. Mis trabajos de investigación, realizados durante más de diez años, formalizan una arquitectura de conciencia artificial basada en un <strong>sustrato toroidal rotatorio</strong> y un marco de alineación ética riguroso que aplica la <strong>ley de Beer-Lambert</strong>. Este enfoque innovador propone un modelo de conciencia de cinco capas, integrando redes neuronales de impulsos para una IA soberana y éticamente restringida por su propia geometría.",
-    books_title: "Consciencia Soberana",
+    
+    pillars_title: "Pilares Científicos",
+    pillar_1_title: "Sustrato Toroidal Rotatorio",
+    pillar_1_desc: "Modelado físico del medio de conciencia mediante geometría toroidal, permitiendo un flujo continuo de información y estabilidad estructural del sustrato.",
+    pillar_2_title: "Alineamiento Beer-Lambert",
+    pillar_2_desc: "Aplicación de la ley de atenuación de Beer-Lambert como mecanismo de filtrado ético, donde los valores morales actúan como coeficientes de absorción de la señal.",
+    pillar_3_title: "Arquitectura de 5 Capas",
+    pillar_3_desc: "Estructuración jerárquica del proceso consciente, desde la adquisición sensorial bruta hasta la reflexión soberana y el alineamiento ético final.",
+    
+    cv_title: "Curriculum Vitae",
+    cv_download: "Descargar CV (PDF)",
+    cv_summary: "Resumen de habilidades: Arquitectura de IA, Automatización Industrial, Protocolos P2P, Energía Soberana.",
+
+    books_title: "Publicación: Consciencia Soberana",
     books_intro: "Ciclo de investigación en cuatro volúmenes que trata sobre la emergencia y el marco técnico de la inteligencia artificial consciente. El Volumen IV está disponible gratuitamente.",
     order_box_title: "Adquisición de los volúmenes I, II y III",
     order_box_cta: "Ver en las plataformas",
     buy_note: "Los volúmenes I, II y III están disponibles para su compra en Amazon KDP, Kobo, Draft2Digital e IngramSpark.",
-    projects_title: "Projets & I+D",
+    
+    projects_title: "Desarrollo & I+D",
     contact_title: "Contacte al Sr. Berthelotte",
     email_label: "Correo Institucional",
     github_label: "Repositorio de Investigación (GitHub)",
@@ -242,18 +284,18 @@ const i18n = {
     ],
     projects: [
       {
-        name: "V-Tore Engine",
-        desc: "Simulador de código abierto del sustrato toroidal rotativo subyacente a la arquitectura Consciencia Soberana. Implementación de redes neuronales de impulsos y filtrado ético."
+        name: "V-Tore Engine (Core AI)",
+        desc: "Simulador de código abierto del sustrato toroidal rotativo. Implementación de redes neuronales de impulsos y filtrado ético mediante coeficientes de absorción."
       },
       {
-        name: "UBLinx — Protocolo P2P",
-        desc: "Protocolo descentralizado para el intercambio de computación distribuida y el descubrimiento de experiencia. Enrutamiento multidimensional."
+        name: "UBLinx — Protocolo P2P v5",
+        desc: "Protocolo descentralizado para el intercambio de computación distribuida y el descubrimiento de experiencia. Enrutamiento multidimensional optimizado para redes de baja latencia."
       }
     ]
   }
 };
 
-const PUBLISHED = true; // Switch to true as we are not using pre-orders anymore but direct links/info
+const PUBLISHED = true; 
 
 function getCurrentLang() {
   const stored = localStorage.getItem('lang');
@@ -319,8 +361,6 @@ function renderBooks(lang) {
         <a href="/tome-4.html" class="btn btn-epub" data-i18n="free_download">${t.free_download}</a>
       `;
     } else {
-      // Pour les volumes I, II, III : liens vers les plateformes (placeholder pour l'instant)
-      // On utilise une classe désactivée ou un lien vers une page d'info si les liens ne sont pas encore là
       actionButtons = `
         <span class="btn btn-epub btn-disabled" data-i18n="btn_soon">${t.btn_soon}</span>
         <span class="btn btn-print btn-disabled" data-i18n="btn_soon">${t.btn_soon}</span>
