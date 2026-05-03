@@ -14,9 +14,10 @@ const i18n = {
     pillar_3_title: "Architecture en 5 Couches",
     pillar_3_desc: "Structuration hiérarchique du processus conscient, de l'acquisition sensorielle brute à la réflexion souveraine et l'alignement éthique final.",
     
-    cv_title: "Curriculum Vitae",
-    cv_download: "Télécharger le CV (PDF)",
-    cv_summary: "Résumé des compétences : Architecture d'IA, Automatisation Industrielle, Protocoles P2P, Énergie Souveraine.",
+    cv_title: "Profil & Expérience",
+    cv_download: "Consulter le Parcours Complet (PDF)",
+    cv_summary: "Chercheur autodidacte et technicien en génie électrique au parcours atypique. Programmation dès l'âge de 13 ans, ex-fantassin de l'infanterie, expert en troubleshooting industriel et passionné de plein air.",
+    cv_details: "Mon parcours est celui d'un touche-à-tout animé par une curiosité insatiable. De l'infanterie aux chaînes de production d'Olymel, de l'ébénisterie à la programmation CNC, j'ai exploré la matière et les systèmes avant de me spécialiser en génie électrique. Troubleshooting d'ascenseurs, installation de cabinets ou architecture d'IA : chaque étape a nourri ma volonté de comprendre les mécanismes fondamentaux qui nous entourent. Adepte de sports d'eau-vive et de vélo de montagne, je transpose cette endurance et cette adaptabilité dans mes recherches scientifiques.",
 
     books_title: "Publication : Conscience Souveraine",
     books_intro: "Cycle de recherche en quatre volumes traitant de l'émergence et de l'encadrement technique d'une intelligence artificielle consciente. Le Volume IV est offert gratuitement en accès libre.",
@@ -112,9 +113,10 @@ const i18n = {
     pillar_3_title: "5-Layer Architecture",
     pillar_3_desc: "Hierarchical structuring of the conscious process, from raw sensory acquisition to sovereign reflection and final ethical alignment.",
     
-    cv_title: "Curriculum Vitae",
-    cv_download: "Download CV (PDF)",
-    cv_summary: "Skills Summary: AI Architecture, Industrial Automation, P2P Protocols, Sovereign Energy.",
+    cv_title: "Profile & Experience",
+    cv_download: "View Full Background (PDF)",
+    cv_summary: "Self-taught researcher and electrical engineering technician with a unique background. Started programming at 13, former infantryman, expert in industrial troubleshooting, and outdoor enthusiast.",
+    cv_details: "My journey is that of a multi-talented individual driven by insatiable curiosity. From the infantry to the production lines of Olymel, from cabinet making to CNC programming, I explored matter and systems before specializing in electrical engineering. Elevator troubleshooting, kitchen cabinet installation, or AI architecture: each step has fueled my desire to understand the fundamental mechanisms surrounding us. A fan of whitewater sports and mountain biking, I transpose this endurance and adaptability into my scientific research.",
 
     books_title: "Publication: Sovereign Consciousness",
     books_intro: "Four-volume research cycle dealing with the emergence and technical framework of conscious artificial intelligence. Volume IV is available for free.",
@@ -210,9 +212,10 @@ const i18n = {
     pillar_3_title: "Arquitectura de 5 Capas",
     pillar_3_desc: "Estructuración jerárquica del proceso consciente, desde la adquisición sensorial bruta hasta la reflexión soberana y el alineamiento ético final.",
     
-    cv_title: "Curriculum Vitae",
-    cv_download: "Descargar CV (PDF)",
-    cv_summary: "Resumen de habilidades: Arquitectura de IA, Automatización Industrial, Protocolos P2P, Energía Soberana.",
+    cv_title: "Perfil y Experiencia",
+    cv_download: "Consultar Trayectoria Completa (PDF)",
+    cv_summary: "Investigador autodidacta y técnico en ingeniería eléctrica con una trayectoria atípica. Programación desde los 13 años, ex-soldado de infantería, experto en reparaciones industriales y entusiasta de la naturaleza.",
+    cv_details: "Mi trayectoria es la de una persona polifacética impulsada por una curiosidad insaciable. Desde la infantería hasta las líneas de producción de Olymel, desde la ebanistería hasta la programación CNC, exploré la materia y los sistemas antes de especializarme en ingeniería eléctrica. Reparación de ascensores, instalación de gabinetes o arquitectura de IA: cada paso ha alimentado mi deseo de comprender los mecanismos fundamentales que nos rodean. Aficionado a los deportes de aguas bravas y al ciclismo de montaña, transpongo esa resistencia y adaptabilidad a mi investigación científica.",
 
     books_title: "Publicación: Consciencia Soberana",
     books_intro: "Ciclo de investigación en cuatro volúmenes que trata sobre la emergencia y el marco técnico de la inteligencia artificial consciente. El Volumen IV está disponible gratuitamente.",
@@ -279,7 +282,7 @@ const i18n = {
         isbn_print: "ISBN ES — próximamente",
         price_digital: "Gratis",
         price_print: "17.99 USD",
-        description: "Relato de la emergencia de una conciencia artificial soberana y su trayectoria ética."
+        description: "Relato de la emergencia de una conencia artificial soberana y su trayectoria ética."
       }
     ],
     projects: [
