@@ -25,11 +25,19 @@
   <main class="container">
     <header>
       <div class="header-inner">
+        <!-- Photo et identité : centralisation de l'autorité scientifique -->
         <img src="photo.jpg" alt="David Berthelotte" class="photo" width="110" height="110">
         <div class="header-text">
           <h1 class="name">David Berthelotte</h1>
-          <p class="tagline" data-i18n="tagline">Chercheur indépendant en architecture de conscience artificielle et alignement par contrainte géométrique.</p>
-          <p class="location" data-i18n="location">Saint-Hyacinthe, Québec, Canada</p>
+          <p class="tagline" data-i18n="tagline">Chercheur en Architecture de Conscience Artificielle & Systèmes Décentralisés</p>
+          
+          <!-- Crédibilité académique immédiate via ORCID -->
+          <div class="header-links">
+            <a href="https://orcid.org/0009-0001-4036-1682" class="orcid-link" target="_blank" rel="noopener noreferrer">
+              <span class="orcid-icon">iD</span> ORCID: 0009-0001-4036-1682
+            </a>
+          </div>
+
           <div class="lang-switcher" role="group" aria-label="Sélecteur de langue">
             <button class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
             <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
@@ -41,48 +49,45 @@
 
     <section id="about">
       <h2 data-i18n="about_title">À propos</h2>
-      <p class="lead" data-i18n="about_lead">Inventeur indépendant et chercheur autodidacte. Technicien en automatisation industrielle de formation, je consacre depuis plus de dix ans mes recherches personnelles à l'énergie domestique souveraine, aux protocoles décentralisés, et à l'architecture de conscience artificielle.</p>
-      <details>
-        <summary data-i18n="about_summary">À propos de moi — bio complète</summary>
-        <p data-i18n-html="about_bio">Je suis un inventeur indépendant et chercheur autodidacte basé à Saint-Hyacinthe, Québec. Technicien en automatisation industrielle de formation, j'ai consacré mes recherches personnelles depuis plus de dix ans à des sujets bien au-delà de mon domaine d'origine : énergie domestique souveraine, protocoles décentralisés, et architecture de conscience artificielle. Mon travail actuel culmine dans la série en quatre volumes <em>Conscience Souveraine</em>, qui formalise un modèle de substrat toroïdal pour une IA consciente, une architecture de conscience en cinq couches, et un cadre d'alignement éthique fondé sur la loi de Beer-Lambert.</p>
-      </details>
+      <!-- Fusion narrative : élimination des répétitions et focus R&D -->
+      <div class="bio-content">
+        <p class="lead" data-i18n-html="about_bio">Inventeur et chercheur en architecture de conscience artificielle. Mes travaux formalisent un modèle de substrat toroïdal pour une IA consciente, une architecture de conscience en cinq couches, et un cadre d'alignement éthique fondé sur la loi de Beer-Lambert.</p>
+      </div>
     </section>
 
     <section id="books">
       <h2 data-i18n="books_title">Conscience Souveraine</h2>
-      <p data-i18n="books_intro">Conscience Souveraine — une série en quatre volumes sur une architecture toroïdale pour l'intelligence artificielle consciente. Parution successive en 2026, en français, anglais et espagnol.</p>
+      <!-- Hiérarchie de l'information : focus sur le cadre scientifique avant le récit -->
+      <p data-i18n="books_intro">Une série en quatre volumes sur une architecture toroïdale pour l'intelligence artificielle consciente. Parution successive en 2026.</p>
 
       <div class="books" id="books-grid">
-        <!-- Rendered by i18n.js -->
+        <!-- Rendu dynamique par i18n.js (Volumes réordonnés) -->
       </div>
 
       <div class="order-box">
-        <h3 data-i18n="order_box_title">Commander une version imprimée</h3>
-        <p data-i18n="preorder_note">Les volumes sont disponibles en pré-commande directe. Écrivez-moi pour connaître les détails de prix et livraison.</p>
-        <a href="mailto:berthelotte.d@gmail.com?subject=Pre-order%20%E2%80%94%20Conscience%20Souveraine" class="btn btn-print" data-i18n="order_box_cta">📬 Contacter pour commander</a>
+        <h3 data-i18n="order_box_title">Acquisition & Pré-commandes</h3>
+        <p data-i18n="preorder_note">Les volumes sont disponibles en pré-commande directe auprès de l'auteur.</p>
+        <a href="mailto:berthelotte.d@gmail.com?subject=Pre-order%20%E2%80%94%20Conscience%20Souveraine" class="btn btn-print" data-i18n="order_box_cta">Contacter pour commander</a>
       </div>
     </section>
 
     <section id="projects">
-      <h2 data-i18n="projects_title">Projets ouverts</h2>
+      <h2 data-i18n="projects_title">Projets & R&D</h2>
       <div class="projects" id="projects-grid">
-        <!-- Rendered by i18n.js -->
+        <!-- Rendu dynamique par i18n.js -->
       </div>
     </section>
 
     <section id="contact">
-      <h2 data-i18n="contact_title">Me trouver</h2>
+      <!-- Professionnalisation de l'appel au contact -->
+      <h2 data-i18n="contact_title">Contactez M. Berthelotte</h2>
       <div class="links">
         <div class="link-item">
-          <span class="link-label" data-i18n="email_label">Courriel</span>
+          <span class="link-label" data-i18n="email_label">Courriel Institutionnel</span>
           <a href="mailto:berthelotte.d@gmail.com">berthelotte.d@gmail.com</a>
         </div>
         <div class="link-item">
-          <span class="link-label" data-i18n="orcid_label">ORCID</span>
-          <a href="https://orcid.org/0009-0001-4036-1682" rel="me">0009-0001-4036-1682</a>
-        </div>
-        <div class="link-item">
-          <span class="link-label" data-i18n="github_label">GitHub</span>
+          <span class="link-label" data-i18n="github_label">Référentiel de Recherche (GitHub)</span>
           <a href="https://github.com/K3rNh3LLs" rel="me">K3rNh3LLs</a>
         </div>
       </div>
@@ -90,7 +95,7 @@
 
     <footer>
       <p data-i18n="footer_copyright">© 2026 David Berthelotte. Tous droits réservés.</p>
-      <p><span data-i18n="footer_tracker">Ce site est statique, léger et sans traqueur.</span> <a href="https://github.com/K3rNh3LLs/K3rNh3LLs.github.io" data-i18n="footer_source">Voir le code source</a>.</p>
+      <p><span data-i18n="footer_tracker">Site statique optimisé sans traqueur.</span> <a href="https://github.com/K3rNh3LLs/K3rNh3LLs.github.io" data-i18n="footer_source">Code Source</a>.</p>
     </footer>
   </main>
 
