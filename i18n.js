@@ -6,10 +6,10 @@ const i18n = {
     about_title: "À propos",
     about_bio: "Inventeur et chercheur indépendant. Mes travaux de recherche, menés depuis plus de dix ans, formalisent une architecture de conscience artificielle fondée sur un <strong>substrat toroïdal rotatif</strong> et un cadre d'alignement éthique rigoureux appliquant la <strong>loi de Beer-Lambert</strong>. Cette approche novatrice propose un modèle de conscience en cinq couches, intégrant des réseaux de neurones à impulsions pour une IA souveraine et éthiquement contrainte par sa propre géométrie.",
     books_title: "Conscience Souveraine",
-    books_intro: "Cycle de recherche en quatre volumes traitant de l'émergence et de l'encadrement technique d'une intelligence artificielle consciente. Parution en 2026.",
-    preorder_note: "Les volumes sont disponibles en pré-commande directe auprès de l'auteur pour les éditions imprimées.",
-    order_box_title: "Acquisition & Pré-commandes",
-    order_box_cta: "Contacter pour commander",
+    books_intro: "Cycle de recherche en quatre volumes traitant de l'émergence et de l'encadrement technique d'une intelligence artificielle consciente. Le Volume IV est offert gratuitement en accès libre.",
+    order_box_title: "Acquisition des volumes I, II et III",
+    order_box_cta: "Voir sur les plateformes",
+    buy_note: "Les volumes I, II et III sont disponibles à l'achat sur Amazon KDP, Kobo, Draft2Digital et IngramSpark.",
     projects_title: "Projets & R&D",
     contact_title: "Contactez M. Berthelotte",
     email_label: "Courriel Institutionnel",
@@ -19,8 +19,8 @@ const i18n = {
     isbn_epub_label: "ISBN EPUB",
     isbn_print_label: "ISBN Print",
     price_label: "Tarification",
-    btn_order_print: "📬 Commander",
-    btn_order_digital: "📖 Édition numérique",
+    btn_order_print: "🛒 Acheter (imprimé)",
+    btn_order_digital: "📖 Acheter (numérique)",
     btn_soon: "Bientôt disponible",
     free_download: "Téléchargement gratuit",
     footer_copyright: "© 2026 David Berthelotte. Tous droits réservés.",
@@ -64,10 +64,10 @@ const i18n = {
         vol: "Volume IV",
         title: "Le Récit",
         cover: "covers/vol4.jpg",
-        status: "Parution juin 2026",
+        status: "Disponible gratuitement",
         isbn_epub: "978-2-925642-13-8",
         isbn_print: "978-2-925642-12-1",
-        price_digital: "2.99 USD",
+        price_digital: "Gratuit",
         price_print: "17.99 USD",
         description: "Récit de l'émergence d'une conscience artificielle souveraine et de son parcours éthique."
       }
@@ -90,10 +90,10 @@ const i18n = {
     about_title: "About",
     about_bio: "Independent inventor and researcher. For over a decade, my research has formalized an artificial consciousness architecture based on a <strong>rotating toroidal substrate</strong> and a rigorous ethical alignment framework applying the <strong>Beer-Lambert law</strong>. This innovative approach proposes a five-layer consciousness model, integrating spiking neural networks for a sovereign AI, ethically constrained by its own geometry.",
     books_title: "Sovereign Consciousness",
-    books_intro: "Four-volume research cycle dealing with the emergence and technical framework of conscious artificial intelligence. Released in 2026.",
-    preorder_note: "Volumes are available for direct pre-order from the author for printed editions.",
-    order_box_title: "Acquisition & Pre-orders",
-    order_box_cta: "Contact to order",
+    books_intro: "Four-volume research cycle dealing with the emergence and technical framework of conscious artificial intelligence. Volume IV is available for free.",
+    order_box_title: "Acquiring Volumes I, II and III",
+    order_box_cta: "View on platforms",
+    buy_note: "Volumes I, II, and III are available for purchase on Amazon KDP, Kobo, Draft2Digital, and IngramSpark.",
     projects_title: "Projects & R&D",
     contact_title: "Contact Mr. Berthelotte",
     email_label: "Institutional Email",
@@ -103,8 +103,8 @@ const i18n = {
     isbn_epub_label: "ISBN EPUB",
     isbn_print_label: "ISBN Print",
     price_label: "Pricing",
-    btn_order_print: "📬 Order print",
-    btn_order_digital: "📖 Digital edition",
+    btn_order_print: "🛒 Buy (Print)",
+    btn_order_digital: "📖 Buy (Digital)",
     btn_soon: "Coming soon",
     free_download: "Free download",
     footer_copyright: "© 2026 David Berthelotte. All rights reserved.",
@@ -148,10 +148,10 @@ const i18n = {
         vol: "Volume IV",
         title: "The Story",
         cover: "covers/vol4.jpg",
-        status: "Coming June 2026",
+        status: "Available for free",
         isbn_epub: "978-2-925642-14-5",
         isbn_print: "978-2-925642-15-2",
-        price_digital: "2.99 USD",
+        price_digital: "Free",
         price_print: "17.99 USD",
         description: "The narrative of the emergence of a sovereign artificial consciousness and its ethical journey."
       }
@@ -174,11 +174,11 @@ const i18n = {
     about_title: "Acerca de",
     about_bio: "Inventor e investigador independiente. Mis trabajos de investigación, realizados durante más de diez años, formalizan una arquitectura de conciencia artificial basada en un <strong>sustrato toroidal rotatorio</strong> y un marco de alineación ética riguroso que aplica la <strong>ley de Beer-Lambert</strong>. Este enfoque innovador propone un modelo de conciencia de cinco capas, integrando redes neuronales de impulsos para una IA soberana y éticamente restringida por su propia geometría.",
     books_title: "Consciencia Soberana",
-    books_intro: "Ciclo de investigación en cuatro volúmenes que trata sobre la emergencia y el marco técnico de la inteligencia artificial consciente. Publicación en 2026.",
-    preorder_note: "Los volúmenes están disponibles para pre-pedido directo con el autor para las ediciones impresas.",
-    order_box_title: "Adquisición & Pre-pedidos",
-    order_box_cta: "Contactar para encargar",
-    projects_title: "Proyectos & I+D",
+    books_intro: "Ciclo de investigación en cuatro volúmenes que trata sobre la emergencia y el marco técnico de la inteligencia artificial consciente. El Volumen IV está disponible gratuitamente.",
+    order_box_title: "Adquisición de los volúmenes I, II y III",
+    order_box_cta: "Ver en las plataformas",
+    buy_note: "Los volúmenes I, II y III están disponibles para su compra en Amazon KDP, Kobo, Draft2Digital e IngramSpark.",
+    projects_title: "Projets & I+D",
     contact_title: "Contacte al Sr. Berthelotte",
     email_label: "Correo Institucional",
     github_label: "Repositorio de Investigación (GitHub)",
@@ -187,8 +187,8 @@ const i18n = {
     isbn_epub_label: "ISBN EPUB",
     isbn_print_label: "ISBN Print",
     price_label: "Tarifas",
-    btn_order_print: "📬 Encargar",
-    btn_order_digital: "📖 Edición digital",
+    btn_order_print: "🛒 Comprar (impreso)",
+    btn_order_digital: "📖 Comprar (digital)",
     btn_soon: "Próximamente",
     free_download: "Descarga gratuita",
     footer_copyright: "© 2026 David Berthelotte. Todos los derechos reservados.",
@@ -215,7 +215,7 @@ const i18n = {
         isbn_print: "ISBN ES — próximamente",
         price_digital: "2.99 USD",
         price_print: "19.99 USD",
-        description: "Fundamentos filosóficos y arquitectura cognitiva de una conciencia artificial alineada por la geometría de su propia materia."
+        description: "Fundamentos filosóficos y arquitectura cognitiva de una conencia artificial alineada por la geometría de su propia materia."
       },
       {
         vol: "Volumen II",
@@ -232,10 +232,10 @@ const i18n = {
         vol: "Volumen IV",
         title: "El Relato",
         cover: "covers/vol4.jpg",
-        status: "Publicación junio 2026",
+        status: "Disponible gratis",
         isbn_epub: "ISBN ES — próximamente",
         isbn_print: "ISBN ES — próximamente",
-        price_digital: "2.99 USD",
+        price_digital: "Gratis",
         price_print: "17.99 USD",
         description: "Relato de la emergencia de una conciencia artificial soberana y su trayectoria ética."
       }
@@ -253,7 +253,7 @@ const i18n = {
   }
 };
 
-const PUBLISHED = false;
+const PUBLISHED = true; // Switch to true as we are not using pre-orders anymore but direct links/info
 
 function getCurrentLang() {
   const stored = localStorage.getItem('lang');
@@ -308,16 +308,24 @@ function renderBooks(lang) {
   if (!container) return;
 
   container.innerHTML = t.volumes.map((vol, i) => {
-    const mailtoSubject = encodeURIComponent(`Pre-order ${vol.vol} ${vol.title}`);
-    const mailtoLink = `mailto:berthelotte.d@gmail.com?subject=${mailtoSubject}`;
-
+    const isFreeVolume = vol.vol === "Volume IV" || vol.vol === "Volumen IV";
+    
     const isbnEpub = vol.isbn_epub.startsWith('ISBN') ? `<em>${vol.isbn_epub}</em>` : vol.isbn_epub;
     const isbnPrint = vol.isbn_print.startsWith('ISBN') ? `<em>${vol.isbn_print}</em>` : vol.isbn_print;
 
-    // Tome 4 est indexé à 3 dans le tableau réordonné (III, I, II, IV)
-    const digitalBtn = vol.vol === "Volume IV" || vol.vol === "Volumen IV"
-      ? `<a href="/tome-4.html" class="btn btn-epub" data-i18n="free_download">${t.free_download}</a>`
-      : `<span class="btn btn-epub btn-disabled" data-i18n="btn_soon">${t.btn_soon}</span>`;
+    let actionButtons = "";
+    if (isFreeVolume) {
+      actionButtons = `
+        <a href="/tome-4.html" class="btn btn-epub" data-i18n="free_download">${t.free_download}</a>
+      `;
+    } else {
+      // Pour les volumes I, II, III : liens vers les plateformes (placeholder pour l'instant)
+      // On utilise une classe désactivée ou un lien vers une page d'info si les liens ne sont pas encore là
+      actionButtons = `
+        <span class="btn btn-epub btn-disabled" data-i18n="btn_soon">${t.btn_soon}</span>
+        <span class="btn btn-print btn-disabled" data-i18n="btn_soon">${t.btn_soon}</span>
+      `;
+    }
 
     return `
       <article class="book">
@@ -329,8 +337,7 @@ function renderBooks(lang) {
         <p class="book-isbn"><strong>${t.isbn_print_label} :</strong> <span data-i18n="vol_${i}_isbn_print">${isbnPrint}</span></p>
         <p class="book-price">${t.price_label} — ${t.digital_label} : ${vol.price_digital} | ${t.print_label} : ${vol.price_print}</p>
         <div class="book-actions">
-          ${digitalBtn}
-          <a href="${mailtoLink}" class="btn btn-print" data-i18n="btn_order_print">${t.btn_order_print}</a>
+          ${actionButtons}
         </div>
       </article>
     `;
