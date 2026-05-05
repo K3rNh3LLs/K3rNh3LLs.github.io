@@ -20,16 +20,16 @@
     // localStorage indisponible (mode privé, etc.)
   }
 
-  // 2. Compteur global (total anonyme via CountAPI)
-  // CountAPI est un service gratuit et anonyme qui stocke uniquement un nombre.
+  // 2. Compteur global (total anonyme via CounterAPI.dev)
+  // CounterAPI.dev est un service gratuit et anonyme qui stocke uniquement un nombre.
   // Aucune donnée personnelle n'est collectée.
   function logGlobalCount() {
-    fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/${KEY}`)
+    fetch(`https://api.counterapi.dev/v1/${NAMESPACE}/${KEY}/up`)
       .then(function (res) { return res.json(); })
       .then(function (data) {
-        if (data && typeof data.value === 'number') {
+        if (data && typeof data.count === 'number') {
           console.log(
-            '%c[Compteur]%c Visites globales : %c' + data.value,
+            '%c[Compteur]%c Visites globales : %c' + data.count,
             'color:#C9A76C; font-weight:bold;',
             'color:#B5A989;',
             'color:#E8C887; font-weight:bold;'
