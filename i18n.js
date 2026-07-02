@@ -53,7 +53,7 @@ const i18n = {
     arch_iso_label: "Télécharger l'ISO bootable",
     arch_zip_label: "Télécharger le kit standalone",
     arch_integrity_note: "Intégrité vérifiable : <code>SHA256SUMS</code> + signature GPG + <code>MANIFEST.json</code> fournis avec chaque livrable. Procédure détaillée sur la <a href=\"/v-tore.html#vtore-arch\">page V-Tore</a>.",
-    arch_todo_note: "⚠ Liens de téléchargement à activer : les fichiers (ISO 1.9 Go / ZIP 441 Mo) doivent être publiés (GitHub Release sur vtore-staging ou dépôt Zenodo). Contactez l'auteur pour l'accès anticipé.",
+    arch_todo_note: "✓ Publié sur GitHub Release (K3rNh3LLs/vtore-staging). Vérifiez l’intégrité avec SHA256SUMS avant usage.",
 
     vtore_page_title: "V-Tore — Simulateur toroïdal open source",
     vtore_hero_title: "V-Tore Engine",
@@ -266,7 +266,7 @@ const i18n = {
     arch_iso_label: "Download bootable ISO",
     arch_zip_label: "Download standalone kit",
     arch_integrity_note: "Verifiable integrity: <code>SHA256SUMS</code> + GPG signature + <code>MANIFEST.json</code> provided with each deliverable. Full procedure on the <a href=\"/v-tore.html#vtore-arch\">V-Tore page</a>.",
-    arch_todo_note: "⚠ Download links to activate: the files (1.9 GB ISO / 441 MB ZIP) must be published (GitHub Release on vtore-staging or Zenodo deposit). Contact the author for early access.",
+    arch_todo_note: "✓ Published on GitHub Release (K3rNh3LLs/vtore-staging). Verify integrity with SHA256SUMS before use.",
 
     vtore_page_title: "V-Tore — Open source toroidal simulator",
     vtore_hero_title: "V-Tore Engine",
@@ -479,7 +479,7 @@ const i18n = {
     arch_iso_label: "Descargar ISO arrancable",
     arch_zip_label: "Descargar kit standalone",
     arch_integrity_note: "Integridad verificable: <code>SHA256SUMS</code> + firma GPG + <code>MANIFEST.json</code> proporcionados con cada entregable. Procedimiento detallado en la <a href=\"/v-tore.html#vtore-arch\">página V-Tore</a>.",
-    arch_todo_note: "⚠ Enlaces de descarga por activar: los archivos (ISO 1.9 Go / ZIP 441 Mo) deben publicarse (GitHub Release en vtore-staging o depósito Zenodo). Contacte al autor para acceso anticipado.",
+    arch_todo_note: "✓ Publicado en GitHub Release (K3rNh3LLs/vtore-staging). Verifique la integridad con SHA256SUMS antes de usar.",
 
     vtore_page_title: "V-Tore — Simulador toroidal open source",
     vtore_hero_title: "V-Tore Engine",
