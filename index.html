@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="title">David Berthelotte — Architecture de Conscience Artificielle & Systèmes Décentralisés</title>
-  <meta name="description" content="Recherche en architecture de conscience artificielle (substrat toroïdal) et alignement éthique via la loi de Beer-Lambert. Travaux de David Berthelotte.">
+  <meta name="description" data-i18n="meta_description" content="Recherche en architecture de conscience artificielle (substrat toroïdal) et alignement éthique via la loi de Beer-Lambert. Travaux de David Berthelotte.">
   <meta name="author" content="David Berthelotte">
   <meta name="keywords" content="Conscience Artificielle, Substrat Toroïdal, Loi de Beer-Lambert, Alignement IA, David Berthelotte, Systèmes Décentralisés, P2P">
   <meta property="og:type" content="website">
@@ -31,7 +31,7 @@
         <div class="header-text">
           <h1 class="name">David Berthelotte</h1>
           <p class="tagline" data-i18n="tagline">Chercheur en Architecture de Conscience Artificielle & Systèmes Décentralisés</p>
-          
+
           <!-- Crédibilité académique immédiate via ORCID -->
           <div class="header-links">
             <a href="https://orcid.org/0009-0001-4036-1682" class="orcid-link" target="_blank" rel="noopener noreferrer">
@@ -87,16 +87,77 @@
       <p data-i18n="books_intro">Une série en quatre volumes sur une architecture toroïdale pour l'intelligence artificielle consciente. Le Volume IV est offert gratuitement en accès libre.</p>
 
       <div class="books" id="books-grid">
-        <!-- Rendu dynamique par i18n.js -->
+        <!-- Rendu dynamique par i18n.js (renderBooks) : carte par volume avec cover, ISBN, prix, badge Zenodo, boutons EPUB/broché -->
       </div>
 
-      <div class="order-box">
-        <h3 data-i18n="order_box_title">Acquisition des volumes I, II et III</h3>
-        <p data-i18n="buy_note">Les volumes I, II et III sont disponibles à l'achat sur Amazon KDP, Kobo, Draft2Digital et IngramSpark.</p>
-        <div class="platforms-cta">
-            <span class="btn btn-print btn-disabled" data-i18n="order_box_cta">Bientôt disponible sur les plateformes</span>
-        </div>
+      <p class="books-note" data-i18n="books_note">Vente directe sans intermédiaire : le numérique est distribué via Stripe et la version brochée via Amazon KDP. Chaque volume est lié à un dépôt Zenodo (public pour le Volume IV, accès sur demande pour les volumes I, II et III).</p>
+    </section>
+
+    <section id="research">
+      <h2 data-i18n="research_title">Recherche & Validation</h2>
+      <p class="lead" data-i18n="research_intro">Validation ouverte et falsifiable : article scientifique déposé sur Zenodo, code V-Tore open source, drops reproductibles, expérience de falsification Arch Linux.</p>
+
+      <div class="research-grid">
+        <!-- Carte 1 : Article scientifique (DOI Zenodo public FR/EN) -->
+        <article class="research-card research-card--article">
+          <h3 data-i18n="research_article_title">Article scientifique</h3>
+          <p data-i18n="research_article_desc">Cadre formel du substrat toroïdal rotatif et de l'alignement Beer-Lambert, déposé et archivé sur Zenodo (DOI persistant, accès public).</p>
+          <div class="research-actions">
+            <a id="article-link" href="https://doi.org/10.5281/zenodo.21113189" class="btn btn-epub" target="_blank" rel="noopener noreferrer" data-i18n="research_article_link">Consulter l'article (Zenodo)</a>
+          </div>
+        </article>
+
+        <!-- Carte 2 : V-Tore (page dédiée + repo GitHub) -->
+        <article class="research-card research-card--vtore">
+          <h3 data-i18n="research_vtore_title">V-Tore — Simulateur toroïdal</h3>
+          <p data-i18n="research_vtore_desc">Simulateur open source du substrat toroïdal rotatif : réseaux de neurones à impulsions, filtre éthique Beer-Lambert, architecture en 5 couches. Code public sur GitHub.</p>
+          <div class="research-actions">
+            <a href="/v-tore.html" class="btn btn-epub" data-i18n="research_vtore_link">Explorer la page V-Tore</a>
+            <a href="https://github.com/K3rNh3LLs/vtore-staging" class="btn btn-print" target="_blank" rel="noopener noreferrer" data-i18n="research_vtore_repo">Référentiel GitHub</a>
+          </div>
+        </article>
+
+        <!-- Carte 3 : Drop #1 OPEN (Zenodo public) -->
+        <article class="research-card research-card--drop research-card--drop-open">
+          <h3 data-i18n="research_drop_title">Drop #1 — V-Tore Core</h3>
+          <p class="drop-label" data-i18n="research_drop_open_label">Drop #1 OPEN — V-Tore Core + expériences falsifiables + benchmarks</p>
+          <p data-i18n="research_drop_open_desc">Dépôt public : code source du cœur V-Tore, protocoles d'expérience falsifiables et jeux de benchmarks reproductibles.</p>
+          <div class="research-actions">
+            <span class="zenodo-badge zenodo-badge--public" data-i18n="zenodo_badge_public">Dépôt public</span>
+            <a href="https://doi.org/10.5281/zenodo.21113195" class="btn btn-print" target="_blank" rel="noopener noreferrer" data-i18n="zenodo_view">Voir sur Zenodo</a>
+          </div>
+        </article>
+
+        <!-- Carte 4 : Drop #1 CLOSED (Zenodo privé, accès sur demande) -->
+        <article class="research-card research-card--drop research-card--drop-closed">
+          <h3 data-i18n="research_drop_title">Drop #1 — V-Tore Core</h3>
+          <p class="drop-label" data-i18n="research_drop_closed_label">Drop #1 CLOSED — modèle qwen2.5-1.5b-toroidal.gguf</p>
+          <p data-i18n="research_drop_closed_desc">Dépôt privé (accès sur demande) : poids du modèle toroïdal GGUF. Accès sur demande par courriel.</p>
+          <div class="research-actions">
+            <span class="zenodo-badge zenodo-badge--private" data-i18n="zenodo_badge_private">Dépôt privé (accès sur demande)</span>
+            <a href="https://doi.org/10.5281/zenodo.21113199" class="btn btn-print" target="_blank" rel="noopener noreferrer" data-i18n="zenodo_view">Voir sur Zenodo</a>
+            <a href="mailto:berthelotte.d@gmail.com" class="btn btn-epub" data-i18n="zenodo_access_request">Demander l'accès</a>
+          </div>
+        </article>
       </div>
+
+      <!-- Carte 5 : Outil de falsification Arch Linux (ISO bootable + ZIP kit) -->
+      <article class="research-card research-card--arch arch-download-card">
+        <h3 data-i18n="research_arch_title">Outil de falsification Arch Linux</h3>
+        <p data-i18n-html="research_arch_desc">Image Arch Linux bootable sur clé USB, spécialisée pour la <strong>falsification reproductible et contrôlée</strong> de la thèse V-Tore. Root read-only (squashfs), air-gap au boot, paquets figés au snapshot Arch, replay bit-à-bit des claims — un chercheur tiers peut mettre la thèse à l'épreuve en minimum d'effort.</p>
+        <div class="arch-downloads">
+          <a href="TODO_URL_ARCH_ISO" class="btn btn-epub arch-download-btn" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="arch_iso_label">Télécharger l'ISO bootable</span>
+            <span class="arch-meta">vtore-falsify-2026.06.22-x86_64.iso · 1.9 Go</span>
+          </a>
+          <a href="TODO_URL_ARCH_KIT" class="btn btn-print arch-download-btn" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="arch_zip_label">Télécharger le kit standalone</span>
+            <span class="arch-meta">vtore-falsification-kit-2026-06-22.zip · 441 Mo</span>
+          </a>
+        </div>
+        <p class="arch-integrity" data-i18n-html="arch_integrity_note">Intégrité vérifiable : <code>SHA256SUMS</code> + signature GPG + <code>MANIFEST.json</code> fournis avec chaque livrable. Procédure détaillée sur la <a href="/v-tore.html#vtore-arch">page V-Tore</a>.</p>
+        <p class="arch-todo-note" data-i18n="arch_todo_note">⚠ Liens de téléchargement à activer : les fichiers (ISO 1.9 Go / ZIP 441 Mo) doivent être publiés (GitHub Release sur vtore-staging ou dépôt Zenodo). Contactez l'auteur pour l'accès anticipé.</p>
+      </article>
     </section>
 
     <section id="projects">

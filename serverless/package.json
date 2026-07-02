@@ -1,0 +1,22 @@
+{
+  "name": "cs-epub-portier",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portier EPUB Cloudflare Worker — livraison sécurisée des EPUBs après paiement Stripe",
+  "author": "David Berthelotte",
+  "license": "UBLinx-Open-Innovation-v1.0",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "db:init": "wrangler d1 execute cs-purchases --file schema.sql",
+    "db:init:remote": "wrangler d1 execute cs-purchases --remote --file schema.sql",
+    "upload:epubs": "bash upload_epubs.sh",
+    "secret:stripe": "wrangler secret put STRIPE_SECRET_KEY",
+    "secret:webhook": "wrangler secret put STRIPE_WEBHOOK_SECRET",
+    "secret:hmac": "wrangler secret put DOWNLOAD_HMAC_KEY"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}

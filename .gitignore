@@ -1,0 +1,12 @@
+# EPUBs payants (Vol I/II/III) — servis en privé via le Worker Cloudflare (R2),
+# jamais publiés sur GitHub Pages. Ne pas committer.
+books/tome-1-*.epub
+books/tome-2-*.epub
+books/tome-3-*.epub
+# Le Volume IV (tome-4-*) reste public (téléchargement gratuit).
+
+# Dépendances et caches du dossier serverless/
+serverless/node_modules/
+serverless/.wrangler/
+serverless/.dev.vars
+serverless/*.log

@@ -1,0 +1,47 @@
+# Cloudflare Worker — Portier EPUB Conscience Souveraine
+# Docs : https://developers.cloudflare.com/workers/wrangler/configuration/
+
+name = "cs-epub-portier"
+main = "src/worker.js"
+compatibility_date = "2025-09-01"
+workers_dev = true
+
+# Route custom désactivée (domaine davidberthelotte.ca sur GitHub Pages, pas Cloudflare).
+# Le worker est servi sur https://cs-epub-portier.davidberthelotte.workers.dev
+# Pour activer un sous-domaine propre : déplacez davidberthelotte.ca vers les nameservers
+# Cloudflare, puis Dashboard → Worker → Settings → Triggers → Custom Domain
+# routes = [
+#   { pattern = "download.davidberthelotte.ca/*", zone_name = "davidberthelotte.ca" }
+# ]
+
+# ---------------------------------------------------------------------------
+# Variables publiques (non secrètes)
+# ---------------------------------------------------------------------------
+[vars]
+SITE_ORIGIN = "https://davidberthelotte.ca"
+
+# ---------------------------------------------------------------------------
+# Bindings R2 (stockage privé des EPUBs)
+#   Bucket à créer :  wrangler r2 bucket create conscience-souveraine-epubs
+# ---------------------------------------------------------------------------
+[[r2_buckets]]
+binding = "EPUBS"
+bucket_name = "conscience-souveraine-epubs"
+
+# ---------------------------------------------------------------------------
+# Binding D1 (journal des achats — anti-rejeu + traçabilité)
+#   Base à créer :  wrangler d1 create cs-purchases
+#   Puis injecter le schéma :  wrangler d1 execute cs-purchases --file schema.sql
+#   Remplacez <ID> ci-dessous par l'ID renvoyé par la commande create.
+# ---------------------------------------------------------------------------
+[[d1_databases]]
+binding = "DB"
+database_name = "cs-purchases"
+database_id = "66d7d737-ec38-4db0-92e9-fb5ab3e086fb"
+
+# ---------------------------------------------------------------------------
+# Secrets (NE PAS mettre ici — utiliser : wrangler secret put <NAME>)
+#   STRIPE_SECRET_KEY      sk_live_... / sk_test_...
+#   STRIPE_WEBHOOK_SECRET  whsec_...
+#   DOWNLOAD_HMAC_KEY     openssl rand -hex 32
+# ---------------------------------------------------------------------------

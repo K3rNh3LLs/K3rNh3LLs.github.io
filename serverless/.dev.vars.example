@@ -1,0 +1,7 @@
+# Copier en .dev.vars (LOCAL, pour wrangler dev) — ne JAMAIS committer.
+# En production, utiliser :  wrangler secret put <NAME>
+
+STRIPE_SECRET_KEY=sk_test_REMPLACER_PAR_VOTRE_CLE
+STRIPE_WEBHOOK_SECRET=whsec_REMPLACER_PAR_VOTRE_SECRET
+# Générer :  openssl rand -hex 32
+DOWNLOAD_HMAC_KEY=REMPLACER_PAR_OPENSSL_RAND_HEX_32
