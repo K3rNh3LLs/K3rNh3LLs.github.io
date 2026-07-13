@@ -1,0 +1,20 @@
+#!/bin/bash
+# .githooks/pre-commit — K3rNh3LLs.github.io
+#
+# Gate ledger immuable de backlog (docs/audit/BACKLOG_LEDGER.json).
+# Le ledger est la source de verite machine du backlog ; BACKLOG.md est son
+# rendu. Voir docs/BACKLOG_LEDGER.md. Violation = commit bloque.
+# Active ce hook avec : bash scripts/install-hooks.sh
+
+set -euo pipefail
+
+if command -v python3 >/dev/null 2>&1 && [ -f scripts/check_backlog_consistency.py ]; then
+  if ! python3 scripts/check_backlog_consistency.py; then
+    echo "ERROR: invariants du ledger de backlog violes." >&2
+    echo "Corriger via 'python3 scripts/backlog.py render|reconcile' — ne pas contourner avec --no-verify." >&2
+    exit 1
+  fi
+fi
+
+echo "pre-commit: ledger de backlog OK."
+exit 0
