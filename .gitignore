@@ -9,4 +9,5 @@ books/tome-3-*.epub
 serverless/node_modules/
 serverless/.wrangler/
 serverless/.dev.vars
-serverless/*.log
+serverless/*.log# Ledger immuable de backlog — verrou local, jamais commité
+docs/audit/BACKLOG_LEDGER.lock
